@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentication</title>
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+  <div class="container">
+    <div class="auth-container">
+      <h2>Welcome Back!</h2>
+      <form id="login-form">
+        <input type="email" placeholder="Email" id="email-input" required>
+        <input type="password" placeholder="Password" id="password-input" required>
+        <button type="submit" class="primary-btn">Log In</button>
+      </form>
+      <p class="separator">or</p>
+      <div class="social-buttons">
+        <button class="social-btn" id="google-login">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
+            <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
+          </svg>
+          Sign in with Google
+        </button>
+        <button class="social-btn" id="facebook-login">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+            <path d="M279.14 288l14.22-92.66h-88.91V134.6c0-25.35 12.42-50.06 52.24-50.06H293V6.26S268.43 0 243.77 0c-73.16 0-121.2 44.38-121.2 125.22v70.12H73.33V288h49.24v224h100.17V288z" />
+          </svg>
+          Sign in with Facebook
+        </button>
+      </div>
+      <p class="muted">Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+    </div>
+
+    <div class="auth-container" id="signup-container" style="display: none;">
+      <h2>Create an Account</h2>
+      <form id="signup-form">
+        <input type="email" placeholder="Email" id="signup-email-input" required>
+        <input type="password" placeholder="Password" id="signup-password-input" required>
+        <button type="submit" class="primary-btn">Sign Up</button>
+      </form>
+      <p class="separator">or</p>
+      <div class="social-buttons">
+        <button class="social-btn" id="google-signup">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
+            <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
+          </svg>
+          Sign up with Google
+        </button>
+        <button class="social-btn" id="facebook-signup">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+            <path d="M279.14 288l14.22-92.66h-88.91V134.6c0-25.35 12.42-50.06 52.24-50.06H293V6.26S268.43 0 243.77 0c-73.16 0-121.2 44.38-121.2 125.22v70.12H73.33V288h49.24v224h100.17V288z" />
+          </svg>
+          Sign up with Facebook
+        </button>
+      </div>
+      <p class="muted">Already have an account? <a href="#" id="login-link">Log in</a></p>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>
